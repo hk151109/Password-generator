@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("assets/bg1.jpg");
+    background-image: url("assets/bg.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -15,13 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
     padding: 0 20px;
     backdrop-filter: blur(1px);
 }
 
-header {
+.header-content {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,6 +37,35 @@ header {
     z-index: 1000;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    background: linear-gradient(45deg, #28a0ea, #0f2588);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background: linear-gradient(45deg, #0f0a6d, #0f2588);
+}
+
+.auth-buttons button:active {
+    transform: scale(0.98);
+}
+
 #cont {
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -44,7 +73,6 @@ header {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 600px;
-    margin-top: 200px;
 }
 
 
@@ -131,4 +159,48 @@ footer {
     border-radius: 10px 10px 0 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+}
+
+
+/* Login Page Styles */
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#loginForm label {
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#loginForm button {
+    background: linear-gradient(45deg, #28a0ea, #0f2588);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#loginForm button:hover {
+    background: linear-gradient(45deg, #0f0a6d, #0f2588);
+}
+
+#loginForm button:active {
+    transform: scale(0.98);
 }
