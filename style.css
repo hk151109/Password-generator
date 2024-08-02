@@ -1,0 +1,134 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 20px;
+    backdrop-filter: blur(1px);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid tomato;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#cont {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 200px;
+}
+
+
+#ok {
+    font-size: 2rem;
+    margin: 20px 0;
+    padding: 15px 50px;
+    background: linear-gradient(45deg, #28a0ea, #0f2588);
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#ok:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#ok:hover {
+    background: linear-gradient(45deg, #0f0a6d, #0f2588);
+}
+
+
+#panel {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    font-size: 1.5rem;
+    background: rgba(68, 68, 68, 0.9);
+    display: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    overflow: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#copy {
+    color: white;
+    background: linear-gradient(45deg, gray, #444);
+    display: none;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#copy:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#copy:hover {
+    background: linear-gradient(45deg, #444, gray);
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid tomato;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
