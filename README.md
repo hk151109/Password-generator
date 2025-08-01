@@ -64,4 +64,3 @@ Make sure your local PHP server has mysqli enabled.
 
 👨‍💻 Author
 Created by Harikrishnan
-🔗 GitHub Profile
